@@ -6,7 +6,8 @@ rooms = [{"id":1, "name": "lets learn python"},
          ]
 
 def home(request):
-    return render(request, "home.html", {"rooms":rooms})
+    context = {"rooms":rooms}
+    return render(request, "base/home.html", context)
 
 def room(request):
-    return render(request, "room.html")
+    return render(request, "base/room.html")
