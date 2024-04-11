@@ -61,6 +61,7 @@ def registerPage (request):
 
 
 def home(request):
+    
     q = request.GET.get('q') if request.GET.get('q') !=  None else ''
     rooms = Room.objects.filter(
         Q(topic__name__icontains = q) |
@@ -90,10 +91,8 @@ def room(request, pk):
         )
         room.participants.add(request.user)
         return redirect('room', pk = room.id)
-
-
-
-    context = {'room':room, "room_messages":room_messages, 'participants':participants}
+    
+    context = {'room':room, "room_messages":room_messages, 'participants':participants,}
     return render(request, "base/room.html", context)
 
 
@@ -103,6 +102,7 @@ def userProfile(request, pk):
     room_messages = user.message_set.all()
     topics = Topic.objects.all()
     context = {'user': user, 'rooms':rooms, 'room_messages':room_messages, "topics": topics}
+  
     return render(request, 'base/profile.html', context)
 
 
