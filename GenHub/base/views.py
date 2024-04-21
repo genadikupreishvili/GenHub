@@ -9,6 +9,8 @@ from django.contrib.auth.forms import UserCreationForm
 from . models import Room, Topic, Message
 from . forms import RoomForm, UserForm
 
+
+
 #  
 def loginPage(request):
     page = "login"
@@ -197,3 +199,4 @@ def topicsPage(request):
 def activityPage(request):
     room_messages = Message.objects.all()
     return render(request, 'base/activity.html', {'room_messages':room_messages})
+
