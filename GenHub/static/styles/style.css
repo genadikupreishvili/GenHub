@@ -1,7 +1,23 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
 
-
 :root {
+    --color-main: #45d2d2da;
+    --color-main-light: #faf4f3d0;
+    --color-dark: #3467354d;
+    --color-dark-medium: #516e54a6;
+    --color-dark-light: #dcc91d84;
+    --color-light: #e5e5e5de;
+    --color-gray: #2cb617b7;
+    --color-light-gray: #59dee5c4;
+    --color-bg: url("/static/images/ggg.jpg");
+    --color-success: #329b05;
+    --color-error: #fc4b0b;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+}
+/* :root {
   --color-main: #71c6dd;
   --color-main-light: #e1f6fb;
   --color-dark: #3f4156;
@@ -11,20 +27,6 @@
   --color-gray: #8b8b8b;
   --color-light-gray: #b2bdbd;
   --color-bg: #2d2d39;
-  --color-success: #5dd693;
-  --color-error: #fc4b0b;
-}
-
-/* :root {
-  --color-main: #dd8871;
-  --color-main-light: #e1f6fb;
-  --color-dark: #064f23;
-  --color-dark-medium: #059939;
-  --color-dark-light: #44f07d;
-  --color-light: #e5e5e5;
-  --color-gray: #500e05;
-  --color-light-gray: #b2bdbd;
-  --color-bg: #161f18;
   --color-success: #5dd693;
   --color-error: #fc4b0b;
 } */
@@ -619,7 +621,7 @@ a {
   border-bottom: 1px solid var(--color-dark-medium);
 }
 
-.topics-page .header__search {
+.topics-page .header__search{
   display: block;
 }
 
