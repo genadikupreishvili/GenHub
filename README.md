@@ -5,11 +5,11 @@
 ### Cloning the repository
 
 --> Clone the repository using the command below :
-```bash
+
 https://github.com/genadikupreishvili/GenHub.git
 
 --> Move into the directory where we have the project files : 
-```bash
+
 cd GenHub
 
 
