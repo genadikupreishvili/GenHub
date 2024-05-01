@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-vjd6ic!(!4quonq060no8sntp+kb+ymxcdf)%mt5l@z^w)(30u
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['https://genhub-kskx.onrender.com']
+ALLOWED_HOSTS = ['genhub-kskx.onrender.com']
 
 
 
