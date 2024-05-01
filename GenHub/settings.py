@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-vjd6ic!(!4quonq060no8sntp+kb+ymxcdf)%mt5l@z^w)(30u
 DEBUG = True
 
 ALLOWED_HOSTS = ['genhub-kskx.onrender.com']
-
+# ALLOWED_HOSTS = []
 
 # Application definition
 
@@ -128,6 +128,8 @@ USE_TZ = True
 
 
 
+###############
+
 STATIC_URL = '/static/'
 MEDIA_URL = '/images/'
 
@@ -137,9 +139,8 @@ STATICFILES_DIRS = [
 
 MEDIA_ROOT = BASE_DIR / 'static/images' 
 
-STATIC_ROOT = BASE_DIR / 'staticfiles'
-
-
+STATIC_ROOT = 
+#######
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
