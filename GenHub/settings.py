@@ -25,8 +25,7 @@ SECRET_KEY = 'django-insecure-vjd6ic!(!4quonq060no8sntp+kb+ymxcdf)%mt5l@z^w)(30u
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['https://genhub-kskx.onrender.com''genhub-kskx.onrender.com']
-
+ALLOWED_HOSTS = ['https://genhub-kskx.onrender.com']
 
 
 # Application definition
@@ -128,6 +127,7 @@ USE_TZ = True
 
 
 
+
 STATIC_URL = '/static/'
 MEDIA_URL = '/images/'
 
@@ -135,14 +135,11 @@ STATICFILES_DIRS = [
     BASE_DIR / 'static'
 ]
 
-MEDIA_ROOT = BASE_DIR / "static/images"
+MEDIA_ROOT = BASE_DIR / 'static/images' 
 MEDIA_ROOT = BASE_DIR / "static/images"
 
 STATIC_ROOT = BASE_DIR / "static"
 
-
-#STATIC_ROOT = 
-STATIC_ROOT = BASE_DIR / "staticfiles"
 
 
 # Default primary key field type
