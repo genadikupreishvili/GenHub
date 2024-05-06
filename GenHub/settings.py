@@ -128,7 +128,7 @@ USE_TZ = True
 
 
 
-###############
+# ##############
 
 # STATIC_URL = '/static/'
 # MEDIA_URL = '/images/'
@@ -139,8 +139,8 @@ USE_TZ = True
 
 # MEDIA_ROOT = BASE_DIR / 'static/images' 
 
-#STATIC_ROOT = 
-#######
+# # STATIC_ROOT = 
+# ######
 
 
 
